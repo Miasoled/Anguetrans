@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
-import { Rastreo } from "../app/rastreo/page";
+import Rastreo from "../app/rastreo/page";
 
-export function Navbar() {
+export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isRastreoOpen, setIsRastreoOpen] = useState(false); // ← Nuevo estado

@@ -6,7 +6,7 @@ interface RastreoProps {
   onClose: () => void;
 }
 
-export function Rastreo({ open, onClose }: RastreoProps) {
+export default function Rastreo({ open, onClose }: RastreoProps) {
   const [tipo, setTipo] = useState("Guía");
   const [numero, setNumero] = useState("");
 
